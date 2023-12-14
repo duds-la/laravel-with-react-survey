@@ -1,0 +1,9 @@
+{
+    ['Start App']
+    "Projeto": "rodar xammp",
+    "Projeto laravel": "php artisan serve",
+    "Projeto react": "cd react // npm run dev"
+
+
+
+}
