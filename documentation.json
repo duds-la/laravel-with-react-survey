@@ -2,8 +2,16 @@
     ['Start App']
     "Projeto": "rodar xammp",
     "Projeto laravel": "php artisan serve",
-    "Projeto react": "cd react // npm run dev"
+    "Projeto react": "cd react // npm run dev",
 
+    --------------------------------------------
+    ['Comands']
+    "Criar estrutura de um arquivo react":"rfc",
+
+    --------------------------------------------
+
+    ['Things']
+    "tag <Outlet />":"é onde o elemento filho(children) é renderizado"
 
 
 }
