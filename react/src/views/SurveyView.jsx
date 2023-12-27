@@ -15,6 +15,11 @@ export default function SurveyView() {
         questions: [],
     });
 
+    const [error, setError] = useState("");
+    const [addQuestion, setaddQuestion] = useState("");
+    const [SurveyQuestions , setSurveyQuestions ] = useState("");
+    const [onQuestionsUpdate  , setonQuestionsUpdate  ] = useState("");
+
     const onImageChoose = () => {
         console.log("onImageChoose");
     };
@@ -30,7 +35,7 @@ export default function SurveyView() {
                 <div className="shadow sm:overflow-hidden sm:rounded-md">
                     <div className="space-y-6 bg-white px-4 py-5 sm:p-6">
                         {error && (
-                            <div className="bg-red-500 text-white py-3 px-3">{error}</div>
+                            <div className="bg-red-500 text-white py-3 px-3"></div>
                         )}
 
                         {/*Image*/}
@@ -159,13 +164,10 @@ export default function SurveyView() {
                         </div>
                         {/*Active*/}
 
-                        <button type="button" onClick={addQuestion}>
+                        <button type="button">
                             Add question
                         </button>
-                        <SurveyQuestions
-                            questions={survey.questions}
-                            onQuestionsUpdate={onQuestionsUpdate}
-                        />
+                        
                     </div>
                     <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
                         <TButton>Save</TButton>
